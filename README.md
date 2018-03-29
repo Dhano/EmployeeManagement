@@ -4,7 +4,7 @@ Object Oriented PHP
 
 This defines our problem statement:
 
-*All the crude operations of employee
+*All the crude operations of employe
 *for a single company
 *Salary assigned to user as per his designation
 *As this is a basic Project there will be only dashboard on the user side and a small feature to decided holidays only for the managers
