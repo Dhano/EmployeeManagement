@@ -31,5 +31,6 @@ $dompdf->setPaper('A4', 'landscape');
 $dompdf->render();
 
 // Output the generated PDF to Browser
+// If direct download is needed without the preview in new tab , remove the 2nd parameter 
 $dompdf->stream("dompdf.pdf" , array("Attachment" => 0));
 ?> 
