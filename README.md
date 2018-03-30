@@ -39,9 +39,11 @@ TDS=30% Above Rs.10,00,000
 
  
 /********************************************************************************************************/
-
-API For Getting public holidays
+API For Getting public holidays(This fetches the data and will be used by the fullcalendar api)
 - https://developers.google.com/calendar/v3/reference/calendarList/list#auth
+
+API For viewing the calendar for Manager Page
+- https://fullcalendar.io/docs#toc
 
 
 Employee Management-
