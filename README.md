@@ -17,5 +17,33 @@ TDS=0% Up to Rs.3,00,000 TDS=5% Rs.2,50,001-Rs.5,00,000 TDS=10% Rs.5,00,001-Rs.1
 https://developers.google.com/calendar/v3/reference/calendarList/list#auth
 API For viewing the calendar for Manager Page
 
+
+
+
+ 
+/********************************************************************************************************/
+API For Getting public holidays(This fetches the data and will be used by the fullcalendar api)
+- https://developers.google.com/calendar/v3/reference/calendarList/list#auth
+
+API For viewing the calendar for Manager Page
+- https://fullcalendar.io/docs#toc
+
+
+Employee Management-
+	-assets
+		-css
+		-js
+		-vendors
+			-bootstrap
+			-jquery
+		-images
+			-users
+	-classes
+-includes
+-all php files		
+-index.php
+
+=======
 https://fullcalendar.io/docs#toc
 Employee Management- -assets -css -js -vendors -bootstrap -jquery -images -users -classes -includes -all php files -index.php
+
