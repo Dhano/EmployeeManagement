@@ -28,6 +28,9 @@ API For Getting public holidays(This fetches the data and will be used by the fu
 API For viewing the calendar for Manager Page
 - https://fullcalendar.io/docs#toc
 
+API For making the salary slip in pdf format
+- https://github.com/dompdf/dompdf
+
 
 Employee Management-
 	-assets
@@ -44,8 +47,6 @@ Employee Management-
 -index.php
 
 =======
-https://fullcalendar.io/docs#toc
-Employee Management- -assets -css -js -vendors -bootstrap -jquery -images -users -classes -includes -all php files -index.php
 
 Wow i was scuseefull
 
