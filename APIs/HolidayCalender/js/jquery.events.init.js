@@ -32,12 +32,12 @@
         var title = event.title;
         var id = event.id;
         $.ajax({
-          url:"HolidayEventOperations/update.php",
+          url:"update.php",
           type:"POST",
           data:{title:title, start:start, end:end, id:id},
           success:function(){
-          calendar.fullCalendar('refetchEvents');
-          alert('Event Update');
+            calendar.fullCalendar('refetchEvents');
+            alert('Event Update');
           }
         })
       },
@@ -48,12 +48,12 @@
         var title = event.title;
         var id = event.id;
         $.ajax({
-          url:"HolidayEventOperations/update.php",
+          url:"update.php",
           type:"POST",
           data:{title:title, start:start, end:end, id:id},
           success:function() {
-          calendar.fullCalendar('refetchEvents');
-          alert("Event Updated");
+            calendar.fullCalendar('refetchEvents');
+            alert("Event Updated");
           }
         });
       },
