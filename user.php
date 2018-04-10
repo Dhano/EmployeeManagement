@@ -36,7 +36,7 @@
                             <div class="text-center">
                                 <div class="row">
                                     <div class="col-md-3 col-md-offset-1">
-                                        <h5>12<br /><small>Files</small></h5>
+                                        <h5>3<br /><small>Working Projects</small></h5>
                                     </div>
                                     <div class="col-md-4">
                                         <h5>26<br /><small>Days Present</small></h5>

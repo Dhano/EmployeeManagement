@@ -1,1 +1,152 @@
+/********************************************************************************************************************
+*************************************************INDEX.PHP**************************************************
+********************************************************************************************************************/
+body#response_output{
+    background: repeating-linear-gradient(45deg, darkred, darkred 2px, #330000 3px, #330000 8px);
+    overflow: hidden;
+}
 
+
+/****************************************************************************************************************
+*********************************************GLOBAL STYLES**************************************************
+****************************************************************************************************************/
+.unselectable{
+    user-select: none;
+}
+
+.custom-outline{
+    font-weight: bold;
+    background: transparent;
+    font-size: 14px;
+    border: solid 2px;
+}
+
+.outline-success{
+    color: #18CE0F;
+    border-color: #18CE0F;
+}
+
+.outline-success:hover, .outline-success:active, .outline-success:focus{
+    background: #18CE0F;
+    color: #FFF;
+    border-color: #18CE0F;
+}
+
+.outline-danger{
+    color: #F20000;
+    border-color:  #F20000;
+}
+
+.outline-danger:hover, .outline-danger:active, .outline-danger:focus{
+    background: #F20000;
+    color: #FFF;
+    border-color:  #F20000;
+}
+
+.outline-primary{
+    color: #337AB7;
+    border-color:  #337AB7;
+}
+
+.outline-primary:hover, .outline-primary:active, .outline-primary:focus{
+    background: #337AB7;
+    color: #FFF;
+    border-color:  #337AB7;
+}
+
+.outline-custom-white{
+    color: #41464B;
+    border-color: #41464B;
+}
+
+.outline-custom-white:hover, .outline-custom-white:active, .outline-custom-white:focus{
+    background:#41464B;
+    color: #FFF;
+    border-color: #41464B;
+}
+
+.outline-custom-light-white{
+    color: #FFF;;
+    border-color: #FFF;
+}
+
+.outline-custom-light-white:hover, .outline-custom-light-white:active, .outline-custom-light-white:focus{
+    background: #FFF;
+    color: #41464B;
+    border-color: #FFF;
+}
+
+.outline-custom-blue{
+    color: #34C6D3;
+    border-color:  #34C6D3;
+}
+
+.outline-custom-blue:hover, .outline-custom-blue:active, .outline-custom-blue:focus{
+    background:#34C6D3;
+    color: #FFF;
+    border-color:  #34C6D3;
+}
+
+/******************************************************************************************************************
+************************************ WHEN SOME ERROR OCCURRED STYLING************************************
+******************************************************************************************************************/
+#access-denied {
+    padding: 0;
+    margin: 0;
+    background: repeating-linear-gradient(45deg, darkred, darkred 2px, #330000 3px, #330000 8px);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    height: 100%;
+    width: 100%;
+}
+#spam {
+    background-color: lightgray;
+    border-radius: 5px;
+    margin: auto;
+    width: 85%;
+    cursor: not-allowed;
+}
+#access-denied h1 {
+    padding-top: 30px;
+    font-size: 60px;
+    font-family: Arial;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    border-bottom-style: dashed;
+    padding-bottom: 20px;
+}
+#access-denied spam {
+    color: red;
+    text-decoration: none;
+    cursor: not-allowed;
+}
+#access-denied p {
+    text-align: center;
+    font-family: Arial;
+    font-weight: bold;
+    padding-bottom: 3%;
+}
+#access-denied small {
+    font-family: Arial;
+    text-align: center;
+    word-spacing: -1px;
+    font-size: 10px;
+    font-weight: normal;
+    color: gray;
+}
+#retry_btn{
+    height: 40px;
+    font-size: 20px;
+    line-height: 20px;
+}
+#gears {
+    text-align: center;
+    color: #333;
+    width: 200px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.85);
+    /* opacity: 0.85; */
+    padding: 30px 0px;
+}
