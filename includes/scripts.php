@@ -19,3 +19,22 @@
 
 <!-- Custom JS -->
 <script src="assets/js/script.js"></script>
+
+<?php if($page == "index"){ ?>
+<!--===============================================================================================-->
+<script src='assets/login_styles/vendor/jquery/jquery-3.2.1.min.js'></script>
+<!--===============================================================================================-->
+<script src='assets/login_styles/vendor/bootstrap/js/popper.js'></script>
+<script src='assets/login_styles/vendor/bootstrap/js/bootstrap.min.js'></script>
+<!--===============================================================================================-->
+<script src='assets/login_styles/vendor/select2/select2.min.js'></script>
+<!--===============================================================================================-->
+<script src='assets/login_styles/vendor/tilt/tilt.jquery.min.js'></script>
+<script>
+    $('.js-tilt').tilt({
+        scale: 1.1
+    })
+</script>
+<!--===============================================================================================-->
+<script src='assets/login_styles/js/main.js'></script>
+<?php } ?>

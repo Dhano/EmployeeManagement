@@ -3,13 +3,77 @@
 ?>
 <html id="loadDynamic">
    <?php 
-        $title = "My";
+        $title = "Login | Employee Management";
+        $page = "index";
         include_once("includes/header.php");
     ?>
 
-    <body id="response_output">
+    <body>
+        <div id="response_output">
+
+            <div>
+
+                <div class='limiter'>
+                    <div class='container-login100'>
+                        <div class='wrap-login100'>
+                            <div class='login100-pic js-tilt' data-tilt>
+                                <img src='assets/login_styles/images/img-01.png' alt='IMG'>
+                            </div>
+
+                            <form class='login100-form validate-form'>
+					<span class='login100-form-title'>
+						Member Login
+					</span>
+
+                                <div class='wrap-input100 validate-input' data-validate='Valid email is required: ex@abc.xyz'>
+                                    <input class='input100' type='text' name='email' placeholder='Email'>
+                                    <span class='focus-input100'></span>
+                                    <span class='symbol-input100'>
+							<i class='fa fa-envelope' aria-hidden='true'></i>
+						</span>
+                                </div>
+
+                                <div class='wrap-input100 validate-input' data-validate='Password is required'>
+                                    <input class='input100' type='password' name='pass' placeholder='Password'>
+                                    <span class='focus-input100'></span>
+                                    <span class='symbol-input100'>
+							<i class='fa fa-lock' aria-hidden='true'></i>
+						</span>
+                                </div>
+
+                                <div class='container-login100-form-btn'>
+                                    <button type='button' class='login100-form-btn'>
+                                        Login
+                                    </button>
+                                </div>
+
+                                <div class='text-center p-t-12'>
+						<span class='txt1'>
+							Forgot
+						</span>
+                                    <a class='txt2' href='#'>
+                                        Username / Password?
+                                    </a>
+                                </div>
+
+                                <div class='text-center p-t-50'>
+                                    <a class='txt2' href='#'>
+                                        Create your Account
+                                        <i class='fa fa-long-arrow-right m-l-5' aria-hidden='true'></i>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
         <script src="assets/vendors/jquery1.10.2/jquery-1.10.2.js"></script>
         <script>
+
             //window.alert("Inside Script");
             var access_denied = false;
             var x1 = document.getElementById("demo");
@@ -17,7 +81,7 @@
             function getLocation() {
                 //window.alert("HI");
                 if (navigator.geolocation) {
-                    window.alert("Getting Location");
+                    //window.alert("Getting Location");
                     navigator.geolocation.getCurrentPosition(showPosition, showError);
                 } else {
                     //window.alert("not supported");
@@ -66,18 +130,6 @@
                     }).fail(function (response) {
                         console.log(response);
                     })
-                } else{
-                    $.ajax({
-                        type: 'POST',
-                        url: 'includes/process-ajax-request.php',
-                        data: 'access_granted_login=1'
-                    }).done(function (response) {
-                        console.log(response);
-                        document.getElementById("loadDynamic").innerHTML = response;
-                        //window.location.replace(response);
-                    }).fail(function (response) {
-                        console.log(response);
-                    })
                 }
             }
 
@@ -116,6 +168,24 @@
                             x = "YOU CANNOT ACCESS THIS PAGE FROM CURRENT LOCATION";
                             access_denied = true;
                         }
+                    } else if(userCurrentLongitude > fixedLongitude){
+                        if(userCurrentLongitude <= fixedLongitude+0.05){
+                            console.log(userCurrentLatitude + "," + userCurrentLongitude);
+                            access_denied = false;
+                        } else {
+                            //window.alert(userCurrentLatitude + " " + fixedLatitude);
+                            x = "YOU CANNOT ACCESS THIS PAGE FROM CURRENT LOCATION";
+                            access_denied = true;
+                        }
+                    } else if(userCurrentLongitude < fixedLongitude){
+                        if(userCurrentLongitude >= fixedLongitude-0.05){
+                            console.log(userCurrentLatitude + "," + userCurrentLongitude);
+                            access_denied = false;
+                        } else {
+                            // window.alert(userCurrentLatitude + " " + fixedLatitude + "YOU CANNOT ACCESS THIS PAGE FROM CURRENT LOCATION");
+                            x = "YOU CANNOT ACCESS THIS PAGE FROM CURRENT LOCATION";
+                            access_denied = true;
+                        }
                     }
                 }
                 loadContent();
@@ -123,4 +193,5 @@
             getLocation();
         </script>
     </body>
+    <?php include_once("includes/scripts.php"); ?>
 </html>

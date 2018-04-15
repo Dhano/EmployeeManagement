@@ -9,7 +9,25 @@
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
 
-
+    <?php if ($page == "index"){ ?>
+    <!--===============================================================================================-->
+    <link rel='icon' type='image/png' href='assets/login_styles/images/icons/favicon.ico'/>
+    <!--===============================================================================================-->
+    <link rel='stylesheet' type='text/css' href='assets/login_styles/vendor/bootstrap/css/bootstrap.min.css'>
+    <!--===============================================================================================-->
+    <link rel='stylesheet' type='text/css'
+          href='assets/login_styles/fonts/font-awesome-4.7.0/css/font-awesome.min.css'>
+    <!--===============================================================================================-->
+    <link rel='stylesheet' type='text/css' href='assets/login_styles/vendor/animate/animate.css'>
+    <!--===============================================================================================-->
+    <link rel='stylesheet' type='text/css' href='assets/login_styles/vendor/css-hamburgers/hamburgers.min.css'>
+    <!--===============================================================================================-->
+    <link rel='stylesheet' type='text/css' href='assets/login_styles/vendor/select2/select2.min.css'>
+    <!--===============================================================================================-->
+    <link rel='stylesheet' type='text/css' href='assets/login_styles/css/util.css'>
+    <link rel='stylesheet' type='text/css' href='assets/login_styles/css/main.css'>
+    <!--===============================================================================================-->
+    <?php } ?>
     <!-- Bootstrap core CSS     -->
     <link href="assets/vendors/bootstrap3/bootstrap.min.css" rel="stylesheet" />
 
